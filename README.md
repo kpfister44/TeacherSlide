@@ -7,27 +7,20 @@ Markdown-based presentation system for teaching AP Computer Science, AP US Histo
 ### Installation
 
 ```bash
-# Install reveal-md globally
-npm install -g reveal-md
-
-# Or install project dependencies
 npm install
 ```
 
 ### Running Presentations
 
 ```bash
-# Browse all presentations
+# Start the local web server
 npm start
+```
 
-# Or use reveal-md directly
-reveal-md slides/
+Then open a deck in your browser:
 
-# Present a specific deck
-reveal-md slides/ap-cs/sample.md
-
-# Enable live reload while editing
-reveal-md slides/ap-cs/sample.md -w
+```
+http://localhost:8000/?deck=slides/ap-cs/sample.md
 ```
 
 ### Presentation Controls
@@ -153,11 +146,10 @@ Changes apply to all presentations automatically.
 
 ## Configuration
 
-Edit `reveal-md.json` to configure:
-- Theme
-- Transitions
-- Code highlighting theme
-- Default reveal.js options
+Edit `index.html` to configure:
+- Theme (link to reveal.js theme CSS)
+- Transitions and reveal.js options (in `Reveal.initialize`)
+- Markdown separators (data attributes on the deck section)
 
 ## Sample Presentations
 
@@ -167,7 +159,8 @@ Three sample presentations are included:
 2. **APUSH:** `slides/ap-ush/sample.md` - Constitutional Convention
 3. **Football:** `slides/football/sample.md` - 3-4 Defense fundamentals
 
-Run `npm start` and click any sample to see it in action.
+Run `npm start` and open a deck with `?deck=` to see it in action.
+Example: `http://localhost:8000/?deck=slides/ap-cs/sample.md`.
 
 ## Tips
 
@@ -179,8 +172,8 @@ Run `npm start` and click any sample to see it in action.
 
 ## Resources
 
-- [reveal-md Documentation](https://github.com/webpro/reveal-md)
 - [reveal.js Documentation](https://revealjs.com/)
+- [reveal.js Markdown](https://revealjs.com/markdown/)
 - [Markdown Guide](https://www.markdownguide.org/)
 
 ## Additional Documentation

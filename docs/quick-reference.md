@@ -5,11 +5,11 @@ Quick cheat sheet for daily TeacherSlide usage.
 ## Starting a Presentation
 
 ```bash
-# Browse all presentations
+# Start the local web server
 npm start
 
-# Or directly present a specific deck
-reveal-md slides/ap-cs/unit1.md
+# Then open a specific deck in your browser
+# http://localhost:8000/?deck=slides/ap-cs/unit1.md
 ```
 
 ## Presentation Controls
@@ -108,5 +108,5 @@ git push
 - Verify image file exists
 
 **CSS not applying:**
-- Check `reveal-md.json` points to correct CSS file
+- Check `index.html` includes the correct CSS links
 - Clear browser cache and reload
