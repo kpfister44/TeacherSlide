@@ -83,13 +83,13 @@ Use four dashes for vertical slides
 ### Adding Images
 
 ```markdown
-![Description](../assets/ap-cs/diagram.png)
+![Description](../../assets/ap-cs/diagram.png)
 ```
 
 ### Adding Local Videos
 
 ```markdown
-<video src="../assets/football/drill.mp4" controls></video>
+<video src="../../assets/football/drill.mp4" controls></video>
 ```
 
 ### Embedding YouTube Videos
