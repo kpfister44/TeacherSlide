@@ -1,0 +1,33 @@
+{
+  "separator": "^\\n---\\n$",
+  "verticalSeparator": "^\\n----\\n$",
+  "theme": "simple",
+  "highlightTheme": "monokai",
+  "css": "css/custom.css",
+  "scripts": "",
+  "assetsDir": "assets",
+  "title": "TeacherSlide",
+  "revealOptions": {
+    "controls": true,
+    "progress": true,
+    "slideNumber": true,
+    "history": true,
+    "keyboard": true,
+    "overview": true,
+    "center": true,
+    "touch": true,
+    "loop": false,
+    "rtl": false,
+    "fragments": true,
+    "embedded": false,
+    "help": true,
+    "showNotes": false,
+    "autoPlayMedia": null,
+    "preloadIframes": null,
+    "autoSlide": 0,
+    "mouseWheel": false,
+    "transition": "slide",
+    "transitionSpeed": "default",
+    "backgroundTransition": "fade"
+  }
+}
