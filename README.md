@@ -183,6 +183,13 @@ Run `npm start` and click any sample to see it in action.
 - [reveal.js Documentation](https://revealjs.com/)
 - [Markdown Guide](https://www.markdownguide.org/)
 
+## Additional Documentation
+
+- [Design Document](docs/plans/2026-01-12-teacherslide-design.md) - Complete system architecture and design decisions
+- [Implementation Plan](docs/plans/2026-01-12-teacherslide-implementation.md) - Step-by-step implementation guide
+- [Claude Code Workflow](docs/claude-workflow.md) - How to use Claude Code to create and maintain presentations
+- [Quick Reference](docs/quick-reference.md) - Cheat sheet for daily usage
+
 ## License
 
 MIT
