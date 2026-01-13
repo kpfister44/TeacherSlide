@@ -105,7 +105,7 @@ Claude will:
 ## Best Practices
 
 1. **Be specific** - Include exact file paths and clear requirements
-2. **Review before presenting** - Always test generated slides with `reveal-md`
+2. **Review before presenting** - Always test generated slides with `npm start` and a `?deck=` URL
 3. **Commit frequently** - Commit after each significant change
 4. **Use descriptive prompts** - More detail = better results
 5. **Iterate** - Refine slides based on how they work in class
@@ -122,7 +122,7 @@ Claude will:
    > "Claude, add an image of the Boston Tea Party to the relevant slide"
 
 4. Test presentation:
-   > Run `reveal-md slides/ap-ush/american-revolution.md`
+   > Run `npm start` then open `http://localhost:8000/?deck=slides/ap-ush/american-revolution.md`
 
 5. Make adjustments based on preview:
    > "Claude, increase the font size in the timeline table"
@@ -144,7 +144,7 @@ Ask Claude to check:
 
 ### CSS Not Applying
 
-Check `reveal-md.json` has correct path to `css/custom.css`
+Check `index.html` includes the correct `css/custom.css` link
 
 ### Images Not Loading
 

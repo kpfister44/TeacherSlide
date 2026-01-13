@@ -4,10 +4,8 @@
   "description": "Markdown-based presentation system for teaching AP CS, APUSH, and coaching football",
   "main": "index.js",
   "scripts": {
-    "start": "reveal-md slides/",
-    "present:ap-cs": "reveal-md slides/ap-cs/",
-    "present:ap-ush": "reveal-md slides/ap-ush/",
-    "present:football": "reveal-md slides/football/"
+    "start": "http-server -c-1 -p 8000 .",
+    "test": "node scripts/smoke-test.js"
   },
   "keywords": [
     "presentations",
@@ -18,6 +16,9 @@
   "author": "Kyle Pfister",
   "license": "MIT",
   "dependencies": {
-    "reveal-md": "^6.1.3"
+    "reveal.js": "^5.2.1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }
