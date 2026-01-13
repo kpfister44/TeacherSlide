@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TeacherSlide</title>
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/simple.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/plugin/highlight/monokai.css">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section
+          id="deck"
+          data-markdown="slides/ap-cs/sample.md"
+          data-separator="^\r?\n---\r?\n$"
+          data-separator-vertical="^\r?\n----\r?\n$"
+          data-separator-notes="^Note:"
+        ></section>
+      </div>
+    </div>
+
+    <script src="node_modules/reveal.js/dist/reveal.js"></script>
+    <script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="node_modules/reveal.js/plugin/notes/notes.js"></script>
+    <script src="node_modules/reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="js/deck-loader.js"></script>
+    <script src="js/auto-scale.js"></script>
+    <script>
+      const deckPath = window.TeacherSlideDeck.getDeckPath();
+      window.TeacherSlideDeck.applyDeck(deckPath);
+
+      Reveal.initialize({
+        width: 1280,
+        height: 720,
+        margin: 0.04,
+        minScale: 0.2,
+        maxScale: 2.0,
+        controls: true,
+        progress: true,
+        slideNumber: true,
+        history: true,
+        keyboard: true,
+        overview: true,
+        center: true,
+        touch: true,
+        loop: false,
+        rtl: false,
+        fragments: true,
+        embedded: false,
+        help: true,
+        showNotes: false,
+        autoPlayMedia: null,
+        preloadIframes: null,
+        autoSlide: 0,
+        mouseWheel: false,
+        transition: 'slide',
+        transitionSpeed: 'default',
+        backgroundTransition: 'fade',
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>

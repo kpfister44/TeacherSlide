@@ -9,10 +9,10 @@
     const slides = document.querySelectorAll('.reveal .slides section');
 
     slides.forEach(slide => {
-      // Skip slides that are already being processed
-      if (slide.dataset.scaled) return;
-
       // Get the slide's content container
+      slide.style.transform = '';
+      slide.style.transformOrigin = '';
+
       const slideHeight = slide.offsetHeight;
       const slideWidth = slide.offsetWidth;
 
@@ -33,9 +33,6 @@
         // Apply transform to scale down the content
         slide.style.transform = `scale(${finalScale})`;
         slide.style.transformOrigin = 'center center';
-
-        // Mark as scaled to prevent re-processing
-        slide.dataset.scaled = 'true';
       }
     });
   }
@@ -48,6 +45,10 @@
 
     // Re-run when slides change (in case of dynamic content)
     Reveal.on('slidechanged', function() {
+      scaleSlideContent();
+    });
+
+    Reveal.on('resize', function() {
       scaleSlideContent();
     });
   }
