@@ -4,7 +4,8 @@
   "description": "Markdown-based presentation system for teaching AP CS, APUSH, and coaching football",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -c-1 -p 8000 ."
+    "start": "http-server -c-1 -p 8000 .",
+    "test": "node scripts/smoke-test.js"
   },
   "keywords": [
     "presentations",
